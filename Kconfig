@@ -1,0 +1,44 @@
+menu "Repository"
+config REPOSITORY_STACK_SIZE
+	int "Repository in stack size"
+	default 2048
+	help
+	  The size of the repository thread stack
+
+config REPOSITORY_HOSTNAME
+	string "Repository hostname"
+	default "clientname.pcdworks.com"
+	help
+	   The target hostname of the repository
+	   
+config REPOSITORY_PORT
+	int "Repository port"
+	default 443
+	help
+	  The repository HTTPS port to use
+
+config REPOSITORY_PATH_LENGTH
+	int "Length of the built path for repository"
+	default 128
+	help
+	  The length of the paths for sending and
+	  receiving to and from the repository
+
+config REPOSITORY_MESSAGE_COUNT
+	int "Number of messsages that can be queued"
+	default 16
+	help
+	   The number of messages for both incoming and
+	   outgoing message queues
+
+config REPOSITORY_BUFFER_SIZE
+	int "Number of bytes for receive buffer"
+	default 2048
+	help
+	  The size of the buffer to send / receive messages
+endmenu
+
+menu "Zephyr Kernel"
+source "Kconfig.zephyr"
+endmenu
+

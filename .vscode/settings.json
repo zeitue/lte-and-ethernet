@@ -1,0 +1,31 @@
+{
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.clang_format_style": "{BasedOnStyle: Google}",
+    "nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.2.0}",
+    "nrf-connect.applications": [
+        "${workspaceFolder}"
+    ],
+    "nrf-connect.topdir": "${nrf-connect.sdk:2.2.0}",
+    "files.associations": {
+        "build.h": "c",
+        "lte_lc.h": "c",
+        "modem.h": "c",
+        "message.h": "c",
+        "kernel.h": "c",
+        "*.pem": "c",
+        "socket.h": "c",
+        "cstddef": "c",
+        "limits": "c",
+        "stdio.h": "c",
+        "client.h": "c",
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "parser.h": "c",
+        "log.h": "c",
+        "net_if.h": "c",
+        "sections.h": "c",
+        "net_config.h": "c",
+        "errno.h": "c"
+    }
+}
